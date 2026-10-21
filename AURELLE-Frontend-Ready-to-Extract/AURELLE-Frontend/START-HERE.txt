@@ -1,0 +1,6 @@
+AURELLE FRONTEND PROJECT
+
+1. In File Explorer, right-click this ZIP and choose Extract All...
+2. Choose Desktop as the destination (avoid protected or existing folders).
+3. Open the extracted AURELLE-Frontend folder. The package.json, index.html, and src folder should be directly inside it.
+4. Do not move or delete the src/assets/images folder; the website uses those images.
