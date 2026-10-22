@@ -24,53 +24,55 @@ export interface JewelleryItem {
 // Dedicated luxury assets - 100% unique per product
 export const ASSETS = {
   // Campaign heroes & workshop
-  goldHero: '/src/assets/images/hero_aurelle_gold_editorial_1792574387696.jpg',
-  diamondHero: '/src/assets/images/hero_aurelle_diamond_editorial_1792574388116.jpg',
-  atelier: '/src/assets/images/brand_aurelle_atelier_1792574388526.jpg',
+  goldHero: new URL('../assets/images/hero_aurelle_gold_editorial_1792574387696.jpg', import.meta.url).href,
+  diamondHero: new URL('../assets/images/hero_aurelle_diamond_editorial_1792574388116.jpg', import.meta.url).href,
+  atelier: new URL('../assets/images/brand_aurelle_atelier_1792574388526.jpg', import.meta.url).href,
 
   // Section 1: Gold Collection - Dedicated unique product photography
-  goldRingLonde: '/src/assets/images/gold_sculptural_ring_1792575219539.jpg',
-  goldChokerSoleil: '/src/assets/images/gold_fluid_choker_1792575219844.jpg',
-  goldEarringsDune: '/src/assets/images/gold_faceted_huggies_1792575219652.jpg',
-  goldPendantSolstice: '/src/assets/images/gold_solstice_pendant_1792575219931.jpg',
-  goldCuffMiraya: '/src/assets/images/gold_contour_cuff_1792575221121.jpg',
-  goldBridalChokerRani: '/src/assets/images/gold_bridal_choker_1792575221297.jpg',
-  goldChainEtoile: '/src/assets/images/gold_link_chain_1792575222298.jpg',
-  goldJhumkasShringar: '/src/assets/images/gold_droplet_jhumkas_1792575223290.jpg',
+  goldRingLonde: new URL('../assets/images/gold_sculptural_ring_1792575219539.jpg', import.meta.url).href,
+  goldChokerSoleil: new URL('../assets/images/gold_fluid_choker_1792575219844.jpg', import.meta.url).href,
+  goldEarringsDune: new URL('../assets/images/gold_faceted_huggies_1792575219652.jpg', import.meta.url).href,
+  goldPendantSolstice: new URL('../assets/images/gold_solstice_pendant_1792575219931.jpg', import.meta.url).href,
+  goldCuffMiraya: new URL('../assets/images/gold_contour_cuff_1792575221121.jpg', import.meta.url).href,
+  goldBridalChokerRani: new URL('../assets/images/gold_bridal_choker_1792575221297.jpg', import.meta.url).href,
+  goldChainEtoile: new URL('../assets/images/gold_link_chain_1792575222298.jpg', import.meta.url).href,
+  goldJhumkasShringar: new URL('../assets/images/gold_droplet_jhumkas_1792575223290.jpg', import.meta.url).href,
 
   // Section 2: Diamond Collection - Dedicated unique product photography
-  diamondRingSolitaire: '/src/assets/images/diamond_solitaire_ring_1792575223574.jpg',
-  diamondStudsStellar: '/src/assets/images/diamond_brilliant_studs_1792575224085.jpg',
-  diamondPendantAurora: '/src/assets/images/diamond_teardrop_pendant_1792575224425.jpg',
-  diamondNecklacePalais: '/src/assets/images/diamond_riviere_collar_1792575225562.jpg',
-  diamondBraceletSymphony: '/src/assets/images/diamond_line_bracelet_1792575225044.jpg',
-  diamondChokerNocturne: '/src/assets/images/diamond_cascade_choker_1792575226155.jpg',
-  diamondRingPaveBand: '/src/assets/images/diamond_eternity_band_1792575226073.jpg',
-  diamondEarringsPearDrop: '/src/assets/images/diamond_pear_drop_earrings_1792575226979.jpg',
+  diamondRingSolitaire: new URL('../assets/images/diamond_solitaire_ring_1792575223574.jpg', import.meta.url).href,
+  diamondStudsStellar: new URL('../assets/images/diamond_brilliant_studs_1792575224085.jpg', import.meta.url).href,
+  diamondPendantAurora: new URL('../assets/images/diamond_teardrop_pendant_1792575224425.jpg', import.meta.url).href,
+  diamondNecklacePalais: new URL('../assets/images/diamond_riviere_collar_1792575225562.jpg', import.meta.url).href,
+  diamondBraceletSymphony: new URL('../assets/images/diamond_line_bracelet_1792575225044.jpg', import.meta.url).href,
+  diamondChokerNocturne: new URL('../assets/images/diamond_cascade_choker_1792575226155.jpg', import.meta.url).href,
+  diamondRingPaveBand: new URL('../assets/images/diamond_eternity_band_1792575226073.jpg', import.meta.url).href,
+  diamondEarringsPearDrop: new URL('../assets/images/diamond_pear_drop_earrings_1792575226979.jpg', import.meta.url).href,
 
   // Section 3: Minimal Collection - Dedicated unique product photography
-  minimalHeroFlatlay: '/src/assets/images/minimal_collection_hero_1792576693802.jpg',
-  minimalThinBandRing: '/src/assets/images/minimal_thin_band_ring_1792576694643.jpg',
-  minimalBarPendant: '/src/assets/images/minimal_delicate_chain_pendant_1792576694569.jpg',
-  minimalBeadedBracelet: '/src/assets/images/minimal_subtle_chain_bracelet_1792576694586.jpg',
+  minimalHeroFlatlay: new URL('../assets/images/minimal_collection_hero_1792576693802.jpg', import.meta.url).href,
+  minimalThinBandRing: new URL('../assets/images/minimal_thin_band_ring_1792576694643.jpg', import.meta.url).href,
+  minimalBarPendant: new URL('../assets/images/minimal_delicate_chain_pendant_1792576694569.jpg', import.meta.url).href,
+  minimalBeadedBracelet: new URL('../assets/images/minimal_subtle_chain_bracelet_1792576694586.jpg', import.meta.url).href,
 
   // Section 4: Daily Wear Collection - Dedicated unique product photography
-  dailyPaperclipChain: '/src/assets/images/daily_wear_paperclip_necklace_1792576695238.jpg',
-  dailyDomeRing: '/src/assets/images/daily_wear_bezel_ring_1792576695715.jpg',
-  dailyStackBangles: '/src/assets/images/daily_wear_stackable_bangles_1792576696304.jpg',
-  dailyHuggieHoops: '/src/assets/images/daily_wear_huggie_earrings_1792576696503.jpg',
+  dailyPaperclipChain: new URL('../assets/images/daily_wear_paperclip_necklace_1792576695238.jpg', import.meta.url).href,
+  dailyDomeRing: new URL('../assets/images/daily_wear_bezel_ring_1792576695715.jpg', import.meta.url).href,
+  dailyStackBangles: new URL('../assets/images/daily_wear_stackable_bangles_1792576696304.jpg', import.meta.url).href,
+  dailyHuggieHoops: new URL('../assets/images/daily_wear_huggie_earrings_1792576696503.jpg', import.meta.url).href,
 
   // Section 5: Wedding Collection - Refined, delicate bridal jewellery
-  weddingLayeredHaar: '/src/assets/images/wedding_graceful_bridal_necklace_1792579895025.jpg',
-  weddingChokerSuite: '/src/assets/images/wedding_delicate_bridal_choker_1792579912429.jpg',
-  weddingKundanBangles: '/src/assets/images/wedding_bridal_kundan_bangles_1792576698681.jpg',
-  weddingChandelierJhumkas: '/src/assets/images/wedding_bridal_statement_earrings_1792576698369.jpg',
+  weddingLayeredHaar: new URL('../assets/images/wedding_graceful_bridal_necklace_1792579895025.jpg', import.meta.url).href,
+  weddingChokerSuite: new URL('../assets/images/wedding_delicate_bridal_choker_1792579912429.jpg', import.meta.url).href,
+  weddingGallery: new URL('../assets/images/wedding_bridal_choker_set_1792576696566.jpg', import.meta.url).href,
+  antiqueGallery: new URL('../assets/images/antique_floral_heritage_necklace_1792579891950.jpg', import.meta.url).href,
+  weddingKundanBangles: new URL('../assets/images/wedding_bridal_kundan_bangles_1792576698681.jpg', import.meta.url).href,
+  weddingChandelierJhumkas: new URL('../assets/images/wedding_bridal_statement_earrings_1792576698369.jpg', import.meta.url).href,
 
   // Section 6: Antique Gold Collection - Dedicated botanical and floral heritage jewellery
-  antiqueTempleNecklace: '/src/assets/images/antique_floral_heritage_necklace_1792579891950.jpg',
-  antiqueNakshiJhumkas: '/src/assets/images/antique_floral_petal_jhumkas_1792579893229.jpg',
-  antiqueTempleKada: '/src/assets/images/antique_vine_leaf_bangle_1792579894453.jpg',
-  antiqueFiligreeRing: '/src/assets/images/antique_floral_filigree_ring_1792579895889.jpg',
+  antiqueTempleNecklace: new URL('../assets/images/antique_floral_heritage_necklace_1792579891950.jpg', import.meta.url).href,
+  antiqueNakshiJhumkas: new URL('../assets/images/antique_floral_petal_jhumkas_1792579893229.jpg', import.meta.url).href,
+  antiqueTempleKada: new URL('../assets/images/antique_vine_leaf_bangle_1792579894453.jpg', import.meta.url).href,
+  antiqueFiligreeRing: new URL('../assets/images/antique_floral_filigree_ring_1792579895889.jpg', import.meta.url).href,
 };
 
 // SECTION 1: GOLD JEWELLERY
