@@ -32,7 +32,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   // Close mobile menu and dropdown on resize to desktop
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth >= 768) {
+      if (window.innerWidth >= 1280) {
         setMobileMenuOpen(false);
       }
     };
@@ -102,8 +102,11 @@ export const Navbar: React.FC<NavbarProps> = ({
         {/* Zone 2: Navigation links across all six collections & atelier */}
         <nav
           aria-label="Primary Navigation"
-          className="hidden md:flex items-center gap-5 lg:gap-7 text-xs sm:text-sm tracking-wider uppercase font-medium text-[#cbbdb0]"
+          className="hidden xl:flex items-center gap-5 lg:gap-7 text-xs sm:text-sm tracking-wider uppercase font-medium text-[#cbbdb0]"
         >
+          <a href="/about-us" className="transition-colors whitespace-nowrap shrink-0 hover:text-[#e8cf96] py-1">About</a>
+          <a href="/gallery" className="transition-colors whitespace-nowrap shrink-0 hover:text-[#e8cf96] py-1">Gallery</a>
+          <a href="/contact-us" className="transition-colors whitespace-nowrap shrink-0 hover:text-[#e8cf96] py-1">Contact</a>
           <button
             onClick={() => scrollToSection('gold-jewellery')}
             className={`transition-colors whitespace-nowrap shrink-0 hover:text-[#e8cf96] py-1 border-b focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#c69f58] cursor-pointer ${
@@ -169,6 +172,14 @@ export const Navbar: React.FC<NavbarProps> = ({
                     <ArrowRight className="w-3.5 h-3.5 text-[#8f7e71] group-hover:text-[#c69f58] group-hover:translate-x-0.5 transition-all" />
                   </button>
                 ))}
+                <a
+                  href="/collections"
+                  onClick={() => setCollectionsDropdownOpen(false)}
+                  className="mt-2 flex items-center justify-between border-t border-[#2a1e17] px-3 py-3 text-xs uppercase tracking-widest text-[#e2c58c] transition-colors hover:bg-[#1a120e] hover:text-white"
+                >
+                  <span>View all collections</span>
+                  <ArrowRight className="h-3.5 w-3.5" />
+                </a>
               </div>
             )}
           </div>
@@ -218,7 +229,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label={mobileMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
             aria-expanded={mobileMenuOpen}
-            className="md:hidden p-2 text-[#dfd4c5] hover:text-[#c69f58] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#c69f58] cursor-pointer"
+            className="xl:hidden p-2 text-[#dfd4c5] hover:text-[#c69f58] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#c69f58] cursor-pointer"
           >
             {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -227,7 +238,13 @@ export const Navbar: React.FC<NavbarProps> = ({
 
       {/* Mobile Navigation Drawer */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-[#110c09] border-b border-[#2d1e17] px-6 py-6 space-y-4 animate-in fade-in slide-in-from-top-4 duration-200">
+        <div className="xl:hidden bg-[#110c09] border-b border-[#2d1e17] px-6 py-6 space-y-4 animate-in fade-in slide-in-from-top-4 duration-200">
+          <div className="grid grid-cols-2 gap-3 border-b border-[#231710] pb-4 text-xs uppercase tracking-widest sm:grid-cols-4">
+            <a href="/about-us" onClick={() => setMobileMenuOpen(false)} className="text-[#cbbdb0] hover:text-[#e8cf96]">About Us</a>
+            <a href="/collections" onClick={() => setMobileMenuOpen(false)} className="text-[#cbbdb0] hover:text-[#e8cf96]">Collections</a>
+            <a href="/gallery" onClick={() => setMobileMenuOpen(false)} className="text-[#cbbdb0] hover:text-[#e8cf96]">Gallery</a>
+            <a href="/contact-us" onClick={() => setMobileMenuOpen(false)} className="text-[#cbbdb0] hover:text-[#e8cf96]">Contact Us</a>
+          </div>
           <div className="text-[11px] uppercase tracking-[0.25em] text-[#a9998d] pb-2 border-b border-[#231710]">
             The 6 Signature Collections
           </div>
