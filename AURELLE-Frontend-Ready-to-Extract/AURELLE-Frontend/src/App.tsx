@@ -14,6 +14,7 @@ import { WishlistDrawer } from './components/WishlistDrawer';
 import { ConsultationModal } from './components/ConsultationModal';
 import { RingGuideModal } from './components/RingGuideModal';
 import { Footer } from './components/Footer';
+import { SitePages } from './components/SitePages';
 
 export default function App() {
   // Wishlist state: start with curated favorites as realistic luxury initial state
@@ -120,6 +121,11 @@ export default function App() {
     setConsultationPiece(null);
     setIsConsultationOpen(true);
   };
+
+  const currentPath = window.location.pathname.replace(/\/$/, '') || '/';
+  if (['/about-us', '/collections', '/gallery', '/contact-us'].includes(currentPath)) {
+    return <SitePages path={currentPath} />;
+  }
 
   return (
     <div className="min-h-screen bg-[#0b0807] text-[#f7f3eb] flex flex-col font-sans selection:bg-[#c69f58]/30 selection:text-[#f8f5ee]">
